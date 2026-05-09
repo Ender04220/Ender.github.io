@@ -1,0 +1,36 @@
+/* 基础重置 */
+body {
+    margin: 0;
+    font-family: "Helvetica", Arial, sans-serif; /* UDL 偏爱无衬线字体 */
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* 导航栏：极致简约 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* 网格布局：模仿 UDL 的排版 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(0); /* 可以尝试黑白滤镜，悬停恢复彩色 */
+    transition: 0.3s;
+}
+
+.project-item p {
+    font-size: 12px;
+    margin-top: 10px;
+}
